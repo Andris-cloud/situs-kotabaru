@@ -305,6 +305,191 @@ img {
     color: #555;
 }
 
+/* ==========================================
+   STYLE BARU UNTUK TENTANG KAMI YANG LENGKAP
+   ========================================== */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem; /* Jarak antar bagian */
+}
+
+/* Agar bagian kedua posisinya terbalik (Teks kiri, Gambar kanan) */
+.about-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.wisata-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.wisata-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.wisata-list li i {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+/* STYLE TOMBOL PLAY PADA VIDEO */
+.about-img {
+    position: relative; /* Penting agar tombol play menempel di gambar */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.play-button i {
+    color: white;
+    font-size: 30px;
+    margin-left: 8px; /* Sedikit geser kanan biar segitiga play pas di tengah */
+}
+
+.about-img a:hover .play-button {
+    background-color: red;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Style Grid Wisata di halaman detail */
+.wisata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.wisata-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.wisata-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.wisata-item h4 {
+    padding: 1rem 1rem 0 1rem;
+    color: #2c3e50;
+}
+
+.wisata-item p {
+    padding: 0 1rem 1rem 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content, 
+    .about-content.reverse {
+        flex-direction: column;
+    }
+    
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .play-button i {
+        font-size: 22px;
+    }
+}
+
+/* ==========================================
+   STYLE CONTACT PERSON DI HALAMAN WISATA
+   ========================================== */
+
+.contact-wisata {
+    background: #eef7ff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border-left: 5px solid #007bff;
+}
+
+.contact-wisata h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #007bff;
+    min-width: 40px;
+}
+
+.contact-item h4 {
+    margin: 0 0 0.3rem 0;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-item a {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+
 /* Struktur Organisasi */
 .struktur {
     padding: 4rem 0;
