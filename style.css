@@ -1,0 +1,1034 @@
+/* Reset & Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TAMBAHAN SUPAYA LEBIH SEMPURNA */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fas, .far, .fab {
+    vertical-align: middle;
+}
+
+.navbar a.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Pastikan gambar tidak bisa di-drag atau diseleksi di HP */
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Header & Navbar */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #dbd834;
+}
+
+/* Dropdown Menu */
+.navbar .dropdown {
+    position: relative;
+}
+
+/* Tombol Dropdown */
+.navbar .dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Animasi Putar Panah */
+.navbar .arrow {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar .dropdown:hover .arrow {
+    transform: rotate(180deg);
+    color: #007bff;
+}
+
+/* Kotak Isi Dropdown */
+.navbar .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 240px;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+    border-radius: 10px;
+    margin-top: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    border-top: 3px solid #007bff;
+    z-index: 999;
+}
+
+/* Efek Muncul (Hover) */
+.navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Isi List Dropdown */
+.navbar .dropdown-menu li {
+    list-style: none;
+}
+
+.navbar .dropdown-menu li a {
+    color: #333 !important;
+    padding: 0.9rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.2s ease;
+}
+
+.navbar .dropdown-menu li:last-child a {
+    border-bottom: none;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Efek saat diarahkan kursor */
+.navbar .dropdown-menu li a:hover {
+    background-color: #eef7ff;
+    color: #007bff !important;
+    padding-left: 1.5rem;
+}
+
+.navbar .dropdown-menu li a i {
+    color: #007bff;
+    font-size: 1rem;
+    width: 18px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    height: 78vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/premium-photo/man-woman-working-farm_1048944-8270663.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-small:hover {
+    background-color: #0056b3;
+}
+
+/* Tentang Kami */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-img {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1.5;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-img {
+        width: 100%;
+        order: 1;
+    }
+    
+    .about-text {
+        order: 2;
+    }
+}
+
+.about {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Struktur Organisasi */
+.struktur {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* ----- STRUKTUR ORGANISASI & GARIS PENGHUBUNG ----- */
+
+.struktur-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; /* Jarak antar level, sekaligus ruang untuk garis */
+    margin-top: 2rem;
+    position: relative;
+}
+
+.struktur-level {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* GARIS PENGHUBUNG BARU */
+.struktur-level:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -3rem; /* Geser ke bawah melewati gap */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 3rem; /* Panjang garis */
+    background-color: #007bff;
+    z-index: 1;
+}
+
+/* Opsional: Tambah titik bulat di ujung garis biar makin rapi */
+.struktur-level:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.struktur-level {
+    position: relative;
+}
+
+/* Style Card */
+.struktur-card {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border-top: 5px solid #007bff;
+    min-width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.struktur-card:hover {
+    transform: translateY(-5px);
+}
+
+.struktur-card.camat {
+    border-top-color: rgb(19, 175, 253); /* Biru untuk Camat */
+    min-width: 250px;
+}
+
+.struktur-card.sekcam {
+    border-top-color: #ecfc0a; /* Kuning muda untuk Sekcam */
+    min-width: 250px;
+}
+
+.struktur-card.Kasubag {
+    border-top-color: #1a9202; /* Hijau untuk Kasubag */
+    min-width: 250px;
+}
+
+.struktur-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Style untuk Staf */
+.struktur-card.staf {
+    border-top-color: #74b3eb; /* Abu-abu untuk Staf */
+    min-width: 180px;
+}
+
+.struktur-card.staf h4 {
+    font-size: 1rem;
+}
+
+.struktur-card p {
+    color: #222;
+    font-size: 1rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .struktur-level {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .struktur-level:not(:last-child)::after {
+        display: none; /* Sembunyikan garis di HP */
+    }
+}
+
+/* Layanan */
+.layanan {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.layanan-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.layanan-card:hover {
+    transform: translateY(-5px);
+}
+
+.layanan-card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.layanan-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.layanan-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Style Tambahan untuk Layanan */
+.layanan-card {
+    cursor: pointer;
+    position: relative;
+}
+
+.link-detail {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.layanan-card:hover .link-detail {
+    opacity: 1;
+}
+
+/* Style Modal/Popup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: slideDown 0.3s;
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h3 {
+    padding: 1.5rem;
+    background-color: #007bff;
+    color: white;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-body h4 {
+    color: #2c3e50;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+.modal-body h4:first-child {
+    margin-top: 0;
+}
+
+/* Style Tabel */
+.table-layanan {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-layanan th, .table-layanan td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.table-layanan th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table-layanan tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsif Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+}
+
+/* ==========================================
+   STYLE UNTUK HALAMAN DETAIL LAYANAN
+   ========================================== */
+
+.page-content {
+    padding: 4rem 0;
+    min-height: 70vh;
+}
+
+.detail-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-top: 2rem;
+}
+
+.detail-box h3 {
+    color: #007bff;
+    margin: 1.5rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.detail-box h3:first-child {
+    margin-top: 0;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.syarat-list {
+    list-style: none;
+    padding: 0;
+}
+
+.syarat-list li {
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}
+
+.syarat-list li i {
+    color: #28a745;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.program-item {
+    background: #eef7ff;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.program-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Tombol Kembali */
+.detail-box .btn {
+    margin-top: 2rem;
+}
+
+/* Data Section */
+.data-section {
+    padding: 4rem 0;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.data-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.data-card i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.data-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.data-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Blog Section */
+.blog {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,123,255,0.15);
+}
+
+.blog-img {
+    height: 220px;
+    overflow: hidden;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar tidak gepeng */
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-img img {
+    transform: scale(1.1); /* Efek zoom saat dihover */
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.date {
+    color: #007bff;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.blog-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.blog-content p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: #007bff;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: gap 0.3s ease;
+}
+
+.blog-card:hover .read-more {
+    gap: 0.8rem;
+}
+
+/* Style Khusus Halaman Berita */
+.blog-img-full {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.blog-img-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.isi-berita {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.isi-berita p {
+    margin-bottom: 1.2rem;
+}
+
+.isi-berita h3 {
+    color: #2c3e50;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+}
+
+.isi-berita ul {
+    margin-left: 1.5rem;
+    list-style: none;
+}
+
+.isi-berita li {
+    margin-bottom: 0.8rem;
+}
+
+/* Kontak */
+.kontak {
+    padding: 4rem 0;
+}
+
+.kontak-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.kontak-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.kontak-item i {
+    font-size: 1.5rem;
+    color: #007bff;
+    min-width: 30px;
+}
+
+.kontak-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+}
+
+.kontak-item p {
+    color: #666;
+}
+
+.kontak-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.kontak-form textarea {
+    resize: vertical;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN - UNTUK HP & TABLET
+   ========================================== */
+
+@media (max-width: 992px) {
+    /* Untuk Tablet */
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Untuk HP */
+
+    /* ----- NAVBAR ----- */
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    /* Dropdown di HP */
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background-color: #f8f9fa;
+        margin-top: 0.5rem;
+        border-radius: 5px;
+    }
+
+    /* ----- HERO / BANNER ----- */
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* ----- TENTANG KAMI ----- */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-img {
+        width: 100%;
+        order: 1;
+    }
+    
+    .about-text {
+        order: 2;
+        text-align: justify;
+    }
+
+    /* ----- STRUKTUR ORGANISASI ----- */
+    .struktur-level {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .struktur-level:not(:last-child)::after {
+        display: none; /* Sembunyikan garis penghubung di HP */
+    }
+
+    .struktur-card {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    /* ----- LAYANAN & DATA ----- */
+    .layanan-grid,
+    .data-grid,
+    .blog-grid {
+        grid-template-columns: 1fr; /* Jadi 1 kolom saja di HP */
+    }
+
+    /* ----- MODAL / POPUP ----- */
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+
+    .table-layanan {
+        font-size: 0.8rem;
+    }
+
+    .table-layanan th, .table-layanan td {
+        padding: 0.5rem;
+    }
+
+    /* ----- KONTAK ----- */
+    .kontak-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ----- SCROLLBAR & LAIN-LAIN ----- */
+    body {
+        -webkit-tap-highlight-color: transparent; /* Hilangkan warna biru saat klik di HP */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Untuk HP Layar Kecil */
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIKOBAR - Kecamatan Kotabaru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigasi -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>SIKOBAR</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">🏠 Home</a></li>
+                    <li><a href="#tentang"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                    <li><a href="#struktur"><i class="fas fa-sitemap"></i> Struktur</a></li>
+                    
+                    <!-- Menu Layanan dengan Dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">📂 Layanan 
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#layanan"><i class="fas fa-id-card"></i> Administrasi Kependudukan</a></li>
+                            <li><a href="#layanan"><i class="fas fa-file-alt"></i> Perizinan</a></li>
+                            <li><a href="#layanan"><i class="fas fa-handshake"></i> Pelayanan Umum</a></li>
+                            <li><a href="#layanan"><i class="fas fa-users"></i> Kemasyarakatan</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Menu Data dengan Dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">📊 Data 
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#data"><i class="fas fa-user-clock"></i> Data Usia</a></li>
+                            <li><a href="#data"><i class="fas fa-map-marker-alt"></i> Data Wilayah</a></li>
+                            <li><a href="#data"><i class="fas fa-calendar-check"></i> Data Kegiatan</a></li>
+                            <li><a href="#data"><i class="fas fa-money-bill-wave"></i> Data Keuangan</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#blog">📰 Blog</a></li>
+                    <li><a href="#kontak">📞 Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Welcome To</h2>
+            <h1>"Kecamatan Kotabaru"</h1>
+            <p>Membangun masyarakat yang sejahtera, BerSwadaya dan Berbudaya.</p>
+            <a href="#tentang" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <h2 class="section-title">Sekilas Tentang Kami</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/Tentang-bukit liaga.jpg" alt="Gambar Kantor Kecamatan Kotabaru">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Kecamatan Kotabaru adalah wilayah yang terletak di Kabupaten Ende. Kami memiliki kekayaan alam yang melimpah dan masyarakat yang ramah dan saling bergotong royong. Sejak didirikan, Kecamatan kami terus berkembang dan berkomitmen memberikan pelayanan terbaik bagi seluruh masyarakat.
+                    </p>
+                    <p>
+                        Kami terus berupaya meningkatkan infrastruktur, kesejahteraan masyarakat, serta pelayanan publik yang cepat dan transparan demi terwujudnya masyarakat yang sejahtera, mandiri, dan berbudaya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi -->
+    <section class="struktur" id="struktur">
+        <div class="container">
+            <h2 class="section-title">Struktur Organisasi</h2>
+            <div class="struktur-container">
+                <!-- Level 1: Camat -->
+                <div class="struktur-level level-1">
+                    <div class="struktur-card camat">
+                        <h3>Camat</h3>
+                        <p>Agustinus M.M. Sanggu, S.H</p>
+                        <p>NIP. 19750514 199903 1 005</p>
+                    </div>
+                </div>
+
+                <!-- Level 2: Sekretaris Camat (Tengah) -->
+                <div class="struktur-level level-2">
+                    <div class="struktur-card sekcam">
+                        <h3>Sekretaris Camat</h3>
+                        <p>Marianus Agang, S.E</p>
+                        <p>NIP. 19750514 199903 1 005</p>
+                    </div>
+                </div>
+
+                
+                <!-- Level 3: Kasubag -->
+                <div class="struktur-level level-3">
+                    <div class="struktur-card Kasubag">
+                        <h3>Kasubag U & K</h3>
+                        <p>NAMA</p>
+                        <p>NIP. </p>
+                    </div>
+                    <div class="struktur-card Kasubag">
+                        <h3>Kasubag Keuangan</h3>
+                        <p>NAMA</p>
+                        <p>NIP. </p>
+                    </div>
+                </div>
+
+
+                <!-- Level 4: Kasi-Kasi -->
+                <div class="struktur-level level-4">
+                    <div class="struktur-card">
+                        <h3>Kasi Pemerintahan</h3>
+                        <p>Gabriel B. Dei, A.Md</p>
+                        <p>NIP. 19801213 201101 1 004</p>
+                    </div>
+                    <div class="struktur-card">
+                        <h3>Kasi PMD</h3>
+                        <p>Adriardus O. Songgo, SE.</p>
+                        <p>NIP. 19730606 200012 1 002</p>
+                    </div>
+                    <div class="struktur-card">
+                        <h3>Kasi Kesra</h3>
+                        <p>Agustinus Satu, S.T</p>
+                        <p>NIP. 19840811 201101 1 019</p>
+                    </div>
+                    <div class="struktur-card">
+                        <h3>Kasi Pelayanan Umum</h3>
+                        <p>Gabriel B. Dei,A.Md</p>
+                        <p>NIP. 19801213 201101 1 004</p>
+                    </div>
+                </div>
+
+
+                <!-- Level 5: Staf -->
+                <div class="struktur-level level-5">
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Fransiskus B. Minggu</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Tobias I. Sola</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Maximus Riwu</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Natu Hyronimus</p>
+                    </div>
+                     <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Siprianus Pake</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Lydia Ndari</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Maria A. Tenda</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Veronika Bheri</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Maria Y. V. Setty</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Noni M. Ndewi</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Kristin M. Manullang</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Andi Hujaidin</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>M. D. Setiawan</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Juliano Matutina</p>
+                    </div>
+                    <div class="struktur-card staf">
+                        <h3>Staf</h3>
+                        <p>Andrianus A. Banda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section class="layanan" id="layanan">
+        <div class="container">
+            <h2 class="section-title">Layanan Publik</h2>
+            <div class="layanan-grid">
+                <div class="layanan-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Administrasi Kependudukan</h3>
+                    <p>Pelayanan pembuatan KTP, KK, Akta Kelahiran, Kematian, dan pindah datang.</p>
+                    <a href="adminduk.html" class="link-detail">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="layanan-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Perizinan</h3>
+                    <p>Pengurusan izin usaha, izin kegiatan, dan rekomendasi lainnya.</p>
+                    <a href="perizinan.html" class="link-detail">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="layanan-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Pelayanan Umum</h3>
+                    <p>Pembuatan surat keterangan tidak mampu, domisili, dan surat pengantar lainnya.</p>
+                    <a href="umum.html" class="link-detail">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="layanan-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Kemasyarakatan</h3>
+                    <p>Pemberdayaan masyarakat, pembinaan ketentraman dan ketertiban umum.</p>
+                    <a href="kemasyarakatan.html" class="link-detail">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Box Detail Layanan -->
+    <div id="modal-adminduk" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="tutupModal('modal-adminduk')">&times;</span>
+            <h3>Administrasi Kependudukan</h3>
+            <div class="modal-body">
+                <h4>Deskripsi Layanan</h4>
+                <p>Layanan ini meliputi pengurusan dokumen kependudukan yang menjadi hak dan kewajiban setiap warga negara. Pelayanan dilakukan dengan cepat, akurat, dan transparan.</p>
+                
+                <h4>Jenis Layanan & Persyaratan</h4>
+                <table class="table-layanan">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Jenis Layanan</th>
+                            <th>Persyaratan Utama</th>
+                            <th>Waktu Proses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pembuatan KTP-Elektronik</td>
+                            <td>Surat Keterangan RT/RW, Kartu Keluarga Asli, Akta kelahiran, Pas foto berwarna ukuran 3x4, Surat keterangan kehilangan dari kepolisian jika KTP hilang, Dokumen pendukung perubahan data seperti akta nikah jika ada perubahan status perkawinan.</td>
+                            <td>1 x 24 Jam</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pencatatan Akta Kelahiran</td>
+                            <td>Surat keterangan lahir dari dokter/bidan/penolong kelahiran, Akta nikah atau kutipan akta perkawinan pemohon, Kartu keluarga, KTP orang tua/wali/pelapor.</td>
+                            <td>Max 3 Hari</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pembuatan / Perubahan KK</td>
+                            <td>Kartu Keluarga Lama, KTP, Akta Kelahiran, Akta Kematian jika ada anggota keluarga yang meninggal, diperlukan untuk mencatat kematian tersebut, Akta Pernikahan diperlukan jika ada perubahan status perkawinan, Surat Pindah jika alamat tempat tinggal berubah.</td>
+                            <td>1 Hari Kerja</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pindah Datang</td>
+                            <td>Surat Keterangan Pindah Asal</td>
+                            <td>Max 2 Hari</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-perizinan" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="tutupModal('modal-perizinan')">&times;</span>
+            <h3>Perizinan</h3>
+            <div class="modal-body">
+                <h4>Tujuan Layanan</h4>
+                <p>Memberikan kemudahan bagi masyarakat dan pelaku usaha dalam memperoleh izin kegiatan atau usaha sesuai peraturan perundang-undangan yang berlaku.</p>
+                
+                <h4>Daftar Izin yang Dapat Diajukan:</h4>
+                <ul>
+                    <li>✅ Izin Mendirikan Bangunan (IMB)</li>
+                    <li>✅ Izin Usaha Mikro dan Kecil (IUMK)</li>
+                    <li>✅ Surat Keterangan Tempat Usaha</li>
+                    <li>✅ Rekomendasi Izin Keramaian/Kegiatan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-umum" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="tutupModal('modal-umum')">&times;</span>
+            <h3>Pelayanan Umum</h3>
+            <div class="modal-body">
+                <h4>Ruang Lingkup</h4>
+                <p>Pelayanan administrasi umum yang bersifat administratif dan mendukung kebutuhan dasar warga dalam berbagai keperluan.</p>
+                
+                <h4>Contoh Formulir Surat:</h4>
+                <table class="table-layanan">
+                    <tr>
+                        <th>Nama Surat</th>
+                        <th>Kegunaan</th>
+                    </tr>
+                    <tr>
+                        <td>Surat Keterangan Tidak Mampu</td>
+                        <td>Untuk beasiswa, bantuan sosial, kesehatan</td>
+                    </tr>
+                    <tr>
+                        <td>Surat Keterangan Domisili</td>
+                        <td>Untuk keperluan bank, sekolah, usaha</td>
+                    </tr>
+                    <tr>
+                        <td>Surat Pengantar SKCK</td>
+                        <td>Untuk melamar pekerjaan</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-kemasyarakatan" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="tutupModal('modal-kemasyarakatan')">&times;</span>
+            <h3>Kemasyarakatan</h3>
+            <div class="modal-body">
+                <h4>Maksud dan Tujuan</h4>
+                <p>Mewujudkan masyarakat yang rukun, damai, dan partisipatif dalam pembangunan serta menjaga keamanan dan ketertiban lingkungan.</p>
+
+                <h4>Program Unggulan:</h4>
+                <div class="program-list">
+                    <div class="program-item">
+                        <h5>🔹 Pembinaan Keamanan</h5>
+                        <p>Koordinasi dengan Linmas dan Babinsa untuk pengamanan wilayah.</p>
+                    </div>
+                    <div class="program-item">
+                        <h5>🔹 Pemberdayaan Masyarakat</h5>
+                        <p>Pelatihan keterampilan, UMKM, dan peningkatan ekonomi keluarga.</p>
+                    </div>
+                    <div class="program-item">
+                        <h5>🔹 Penanganan Konflik Sosial</h5>
+                        <p>Mediasi dan penyelesaian masalah antar warga secara musyawarah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data -->
+    <section class="data-section" id="data">
+        <div class="container">
+            <h2 class="section-title">Data & Statistik</h2>
+            <div class="data-grid">
+                <div class="data-card">
+                    <i class="fas fa-user-clock"></i>
+                    <h3>Data Usia</h3>
+                    <p>Statistik penduduk berdasarkan kelompok usia.</p>
+                    <a href="usia.html" class="btn-small">Lihat Data <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="data-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Data Wilayah</h3>
+                    <p>Informasi geografis dan pembagian wilayah administrasi.</p>
+                    <a href="wilayah.html" class="btn-small">Lihat Data <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="data-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Data Kegiatan</h3>
+                    <p>Jadwal dan laporan kegiatan yang telah dilaksanakan.</p>
+                    <a href="kegiatan.html" class="btn-small">Lihat Data <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="data-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Data Keuangan</h3>
+                    <p>Laporan anggaran dan realisasi keuangan daerah.</p>
+                    <a href="keuangan.html" class="btn-small">Lihat Data <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Berita -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Berita & Kegiatan</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1517494276693-3612d0187576?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gotong Royong">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 12 Mei 2024</span>
+                        <h3>Kegiatan Gotong Royong Bersih Desa</h3>
+                        <p>Warga bersama aparat desa melaksanakan kerja bakti membersihkan saluran air dan lingkungan demi menjaga kesehatan bersama.</p>
+                        <a href="berita1.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc6f0d05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sosialisasi">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 10 Mei 2024</span>
+                        <h3>Sosialisasi Program Bantuan Sosial</h3>
+                        <p>Pemerintah kecamatan melakukan sosialisasi dan pendataan terkait penyaluran bantuan sosial agar tepat sasaran.</p>
+                        <a href="berita2.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1556740755-069a40165b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pelatihan UMKM">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 08 Mei 2024</span>
+                        <h3>Pelatihan Keterampilan UMKM</h3>
+                        <p>Peningkatan kapasitas ekonomi masyarakat melalui pelatihan pembuatan kerajinan tangan dan pengemasan produk.</p>
+                        <a href="berita3.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="kontak" id="kontak">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="kontak-container">
+                <div class="kontak-info">
+                    <div class="kontak-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Trans Utara Ende - Maumere KM 119, Kab. Ende, Nusa Tenggara Timur</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>(0381) xxx-xxx</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>kotabaru@ende.go.id</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Kerja</h4>
+                            <p>Senin - Jumat: 08.00 - 16.00 WITA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="kontak-form">
+                    <input type="text" placeholder="Nama Anda" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SIKOBAR - Kecamatan Kotabaru. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    // ==========================================
+    // 1. Fungsi Dropdown (Muncul saat diklik)
+    // ==========================================
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const menu = dropdown.querySelector('.dropdown-menu');
+        const toggle = dropdown.querySelector('a');
+
+        // Sembunyikan dropdown di awal
+        menu.style.display = 'none';
+
+        // Event klik pada menu dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault(); // Mencegah link berjalan
+
+            // Tutup dropdown lain yang terbuka
+            dropdowns.forEach(other => {
+                if(other !== dropdown) {
+                    other.querySelector('.dropdown-menu').style.display = 'none';
+                }
+            });
+
+            // Toggle tampilkan/sembunyikan yang diklik
+            if(menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    });
+
+    // Tutup dropdown jika klik di luar area
+    document.addEventListener('click', function(e) {
+        if(!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.style.display = 'none';
+            });
+        }
+    });
+
+
+    // ==========================================
+    // 2. Smooth Scroll saat klik menu navigasi
+    // ==========================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            if(targetId === '#') return;
+
+            const targetElement = document.querySelector(targetId);
+            if(targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // Jarak dari atas agar tidak tertutup navbar
+                    behavior: 'smooth'
+                });
+
+                // Tutup dropdown setelah klik
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    menu.style.display = 'none';
+                });
+            }
+        });
+    });
+
+
+    // ==========================================
+    // 3. Efek Navbar Berubah Warna saat Scroll
+    // ==========================================
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header');
+        if(window.scrollY > 50) {
+            header.style.backgroundColor = 'rgba(44, 62, 80, 0.95)';
+            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        } else {
+            header.style.backgroundColor = '#2c3e50';
+            header.style.boxShadow = 'none';
+        }
+    });
+
+
+    // ==========================================
+    // 4. Efek Muncul Bertahap saat Scroll (Fade In)
+    // ==========================================
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Terapkan efek ke semua section
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        observer.observe(section);
+    });
+
+
+    // ==========================================
+    // 5. Animasi pada Card saat dihover
+    // ==========================================
+    const cards = document.querySelectorAll('.layanan-card, .data-card, .blog-card, .struktur-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.3s ease';
+            this.style.transform = 'translateY(-10px) scale(1.02)';
+            this.style.boxShadow = '0 10px 25px rgba(0,123,255,0.2)';
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+            this.style.boxShadow = '0 3px 10px rgba(0,0,0,0.08)';
+        });
+    });
+
+
+    // ==========================================
+    // 6. Validasi & Feedback Form Kontak
+    // ==========================================
+    const form = document.querySelector('.kontak-form');
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Simulasi pengiriman
+            const btn = this.querySelector('.btn');
+            const originalText = btn.textContent;
+            btn.textContent = 'Mengirim...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Pesan berhasil terkirim! Terima kasih.');
+                btn.textContent = originalText;
+                btn.disabled = false;
+                form.reset();
+            }, 1500);
+        });
+    }
+</script>
+</html>
